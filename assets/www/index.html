@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>PhoneGap</title>
+<script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js">
+</script>
+<script type="text/javascript" charset="utf-8" src="qrcode.js">
+</script>
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+
+</head>
+<body onload="setupqr()">
+<div id="qrdiv" >
+QR Code Generation
+  <form name="qrinp" method="POST">
+    <input type="hidden" name="ECC" value="1" size="1"><br><br>
+    <input type="text" name="qrinput" size="10"></input>
+     <input class="butt" type="button" value="QR Code" onclick="doqr()"/>
+  </form>
+    <canvas  id="qrcanv"}>No Canvas Support?
+</div>
+
+</body>
+</html>
